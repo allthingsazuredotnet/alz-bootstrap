@@ -1,6 +1,6 @@
 module "enterprise-scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = "4.2.0"
+  version = "5.0.3"
 
   disable_telemetry = true
 
@@ -12,13 +12,10 @@ module "enterprise-scale" {
   deploy_online_landing_zones  = true
   root_id                      = var.root_id
   root_name                    = var.root_name
-  subscription_id_connectivity = var.subscription_id_connectivity
-  subscription_id_identity     = var.subscription_id_identity
-  subscription_id_management   = var.subscription_id_management
 
   providers = {
     azurerm              = azurerm
-    azurerm.connectivity = azurerm.connectivity
-    azurerm.management   = azurerm.management
+    azurerm.connectivity = azurerm
+    azurerm.management   = azurerm
   }
 }
