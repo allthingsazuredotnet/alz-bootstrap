@@ -1,0 +1,40 @@
+{
+  "name": "764691b4-f73b-42b8-8c0d-02b31e0a7503",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "apiVersion": "2018-01-01-preview",
+  "properties": {
+    "roleName": "LandingZones-Contributor",
+    "description": "Custom contributor role for workload subscriptions.  This is a clone of the built-in Contributor role, with restricted permissions for private DNS zones (no ability to delete records or zones)",
+    "assignableScopes": [
+      "/providers/Microsoft.Management/managementGroups/bslz-landing-zones"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*"
+        ],
+        "notActions": [
+          "Microsoft.Authorization/*/Delete",
+          "Microsoft.Authorization/*/Write",
+          "Microsoft.Authorization/elevateAccess/Action",
+          "Microsoft.Blueprint/blueprintAssignments/write",
+          "Microsoft.Blueprint/blueprintAssignments/delete",
+          "Microsoft.Compute/galleries/share/action",
+          "Microsoft.Purview/consents/write",
+          "Microsoft.Purview/consents/delete",
+          "Microsoft.Network/privateDnsZones/virtualNetworkLinks/delete",
+          "Microsoft.Network/privateDnsZones/delete",
+          "Microsoft.Network/privateDnsZones/write",
+          "Microsoft.Network/dnsResolvers/write",
+          "Microsoft.Network/dnsResolvers/delete",
+          "Microsoft.Network/virtualNetworks/peer/action",
+          "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/write",
+          "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/delete",
+          "Microsoft.Network/natGateways/write"
+        ],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ]
+  }
+}
