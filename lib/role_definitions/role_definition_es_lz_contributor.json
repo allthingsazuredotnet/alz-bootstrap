@@ -6,7 +6,7 @@
     "roleName": "LandingZones-Contributor",
     "description": "Custom contributor role for workload subscriptions.  This is a clone of the built-in Contributor role, with restricted permissions for private DNS zones (no ability to delete records or zones)",
     "assignableScopes": [
-      "/providers/Microsoft.Management/managementGroups/bslz-landing-zones"
+      "${current_scope_resource_id}"
     ],
     "permissions": [
       {
