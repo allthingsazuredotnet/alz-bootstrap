@@ -12,6 +12,7 @@ module "enterprise-scale" {
   deploy_online_landing_zones = true
   root_id                     = var.root_id
   root_name                   = var.root_name
+  library_path                = "${path.root}/lib"
 
   providers = {
     azurerm              = azurerm
