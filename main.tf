@@ -9,6 +9,7 @@ module "enterprise-scale" {
 
   deploy_corp_landing_zones   = true
   deploy_management_resources = true
+  subscription_id_management  = data.azurerm_client_config.core.subscription_id
   deploy_online_landing_zones = true
   root_id                     = var.root_id
   root_name                   = var.root_name
