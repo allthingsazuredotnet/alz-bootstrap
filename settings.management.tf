@@ -24,7 +24,7 @@ locals {
       security_center = {
         enabled = true
         config = {
-          email_security_contact             = var.security_alerts_email_address
+          email_security_contact                                = var.security_alerts_email_address
           enable_defender_for_apis                              = true
           enable_defender_for_app_services                      = true
           enable_defender_for_arm                               = true

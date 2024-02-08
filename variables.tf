@@ -16,17 +16,17 @@ variable "root_name" {
 }
 
 variable "log_retention_in_days" {
-  type = number
+  type    = number
   default = 30
 }
 
 variable "security_alerts_email_address" {
-  type = string
+  type    = string
   default = "security@allthingsazure.net"
 }
 
 variable "management_resources_location" {
-  type = string
+  type    = string
   default = "uksouth"
 }
 
