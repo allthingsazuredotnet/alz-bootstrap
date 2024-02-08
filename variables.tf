@@ -14,3 +14,25 @@ variable "root_name" {
   type        = string
   default     = "Enterprise-Scale"
 }
+
+variable "log_retention_in_days" {
+  type = number
+  default = 30
+}
+
+variable "security_alerts_email_address" {
+  type = string
+  default = "security@allthingsazure.net"
+}
+
+variable "management_resources_location" {
+  type = string
+  default = "uksouth"
+}
+
+variable "management_resources_tags" {
+  type = map(string)
+  default = {
+    deployment = "deployed by allthingsazure.net"
+  }
+}
