@@ -22,7 +22,7 @@ locals {
         }
       }
       security_center = {
-        enabled = true
+        enabled = false
         config = {
           email_security_contact                                = var.security_alerts_email_address
           enable_defender_for_apis                              = true
