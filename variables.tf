@@ -33,6 +33,6 @@ variable "management_resources_location" {
 variable "management_resources_tags" {
   type = map(string)
   default = {
-    deployment = "deployed by allthingsazure.net"
+    deployedBy = "allthingsazure.net"
   }
 }
