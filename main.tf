@@ -7,6 +7,8 @@ module "enterprise-scale" {
   default_location = var.default_location
   root_parent_id   = data.azurerm_client_config.core.tenant_id
 
+  strict_subscription_association = true
+
   deploy_corp_landing_zones      = true
   deploy_management_resources    = true
   configure_management_resources = local.configure_management_resources
