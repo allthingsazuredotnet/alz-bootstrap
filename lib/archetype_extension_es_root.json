@@ -8,7 +8,17 @@
     ],
     "archetype_config": {
       "parameters": {},
-      "access_control": {}
+      "access_control": {
+        "Owner": [
+          "6868aafa-202f-4596-85d6-99224a3f6a80"
+        ],
+        "Security Reader": [
+          "cd7e5ea0-423e-4f37-964b-2f3a1da9a4a9"
+        ],
+        "Security Admin": [
+          "123f6ee2-8069-4d28-a788-6c06bae491ce"
+        ]
+      }
     }
   }
 }
