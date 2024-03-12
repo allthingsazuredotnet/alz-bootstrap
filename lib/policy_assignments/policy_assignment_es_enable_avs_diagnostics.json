@@ -19,7 +19,7 @@
         "resourceLocationList": {
           "value": "*"
         },
-        "SlogAnalytics": {
+        "logAnalytics": {
           "value": "/subscriptions/ed471401-73c9-4910-aebb-ff80c112e496/resourceGroups/bslz-mgmt/providers/Microsoft.OperationalInsights/workspaces/bslz-la"
         }
       },
