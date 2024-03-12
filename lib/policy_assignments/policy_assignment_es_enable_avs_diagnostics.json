@@ -1,34 +1,37 @@
 {
-    "name": "Enable-AVS-Diagnostics",
-    "type": "Microsoft.Authorization/policyAssignments",
-    "apiVersion": "2019-09-01",
-    "properties": {
-      "description": "Resource logs should be enabled to track activities and events that take place on your resources and give you visibility and insights into any changes that occur. This policy deploys a diagnostic setting using a category group to route logs to a Log Analytics workspace for AVS Private clouds (microsoft.avs/privateclouds).",
-      "displayName": "Enable logging by category group for AVS Private clouds (microsoft.avs/privateclouds) to Log Analytics",
-      "notScopes": [],
-      "parameters": {
-        "effect": {
-          "value": "DeployIfNotExists"
-        },
-        "diagnosticSettingName": {
-          "value": "setByPolicy-LogAnalytics"
-        },
-        "categoryGroup": {
-          "value": "allLogs"
-        },
-        "resourceLocationList": {
-          "value": "*"
-        },
-        "logAnalytics": {
-          "value": "/subscriptions/ed471401-73c9-4910-aebb-ff80c112e496/resourceGroups/bslz-mgmt/providers/Microsoft.OperationalInsights/workspaces/bslz-la"
-        }
+  "name": "Enable-AVS-Diagnostics",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "apiVersion": "2019-09-01",
+  "properties": {
+    "description": "Resource logs should be enabled to track activities and events that take place on your resources and give you visibility and insights into any changes that occur. This policy deploys a diagnostic setting using a category group to route logs to a Log Analytics workspace for AVS Private clouds (microsoft.avs/privateclouds).",
+    "displayName": "Enable logging by category group for AVS Private clouds (microsoft.avs/privateclouds) to Log Analytics",
+    "notScopes": [],
+    "parameters": {
+      "effect": {
+        "value": "DeployIfNotExists"
       },
-      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/69ab8bfc-dc5b-443d-93a7-7531551dec66",
-      "scope": "${current_scope_resource_id}",
-      "enforcementMode": null
+      "diagnosticSettingName": {
+        "value": "setByPolicy-LogAnalytics"
+      },
+      "categoryGroup": {
+        "value": "allLogs"
+      },
+      "resourceLocationList": {
+        "value": [
+          "uksouth",
+          "ukwest"
+        ]
+      },
+      "logAnalytics": {
+        "value": "/subscriptions/ed471401-73c9-4910-aebb-ff80c112e496/resourceGroups/bslz-mgmt/providers/Microsoft.OperationalInsights/workspaces/bslz-la"
+      }
     },
-    "location": "${default_location}",
-    "identity": {
-      "type": "SystemAssigned"
-    }
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/69ab8bfc-dc5b-443d-93a7-7531551dec66",
+    "scope": "${current_scope_resource_id}",
+    "enforcementMode": null
+  },
+  "location": "${default_location}",
+  "identity": {
+    "type": "SystemAssigned"
   }
+}
