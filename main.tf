@@ -15,6 +15,7 @@ module "enterprise-scale" {
   root_id                        = var.root_id
   root_name                      = var.root_name
   library_path                   = "${path.root}/lib"
+  custom_landing_zones           = local.custom_landing_zones
 
   providers = {
     azurerm              = azurerm
