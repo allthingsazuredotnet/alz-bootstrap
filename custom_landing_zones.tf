@@ -5,7 +5,7 @@ locals {
       parent_management_group_id = "${var.root_id}-landing-zones"
       subscription_ids           = []
       archetype_config = {
-        archetype_id   = "default_empty"
+        archetype_id   = "avs"
         parameters     = {}
         access_control = {}
       }
