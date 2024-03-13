@@ -8,7 +8,7 @@
       "notScopes": [],
       "parameters": {
         "effect": {
-          "value": "DeployIfNotExists"
+          "value": "AuditIfNotExists"
         },
         "IncludeArcMachines": {
           "value": "true"
