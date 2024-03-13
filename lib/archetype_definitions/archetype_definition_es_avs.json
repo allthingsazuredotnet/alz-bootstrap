@@ -6,7 +6,8 @@
             "Audit-LAW-Not-Connected",
             "Audit-Windows-Passwords",
             "Audit-Windows-Domain",
-            "Audit-Time-Zone"
+            "Audit-Time-Zone",
+            "Audit-Cert-Expiry"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
