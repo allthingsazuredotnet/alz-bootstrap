@@ -9,7 +9,8 @@
             "Audit-Time-Zone",
             "Audit-Cert-Expiry",
             "Audit-Trusted-Root",
-            "Audit-Password-Age"
+            "Audit-Max-Password-Age",
+            "Audit-Min-Password-Age"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
