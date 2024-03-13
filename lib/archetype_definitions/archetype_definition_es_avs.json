@@ -4,7 +4,8 @@
             "Enable-AVS-Diagnostics",
             "Audit-Linux-0644",
             "Audit-LAW-Not-Connected",
-            "Audit-Windows-Passwords"
+            "Audit-Windows-Passwords",
+            "Audit-Windows-Domain"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
