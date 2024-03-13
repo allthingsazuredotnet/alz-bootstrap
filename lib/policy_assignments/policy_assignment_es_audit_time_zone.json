@@ -1,0 +1,25 @@
+{
+    "name": "Audit-Time-Zone",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+      "description": "Requires that prerequisites are deployed to the policy assignment scope.  Machines are non-compliant if the value of the property StandardName in WMI class Win32_TimeZone does not match the selected time zone for the policy parameter.",
+      "displayName": "Audit Windows machines that are not set to the specified time zone",
+      "notScopes": [],
+      "parameters": {
+        "IncludeArcMachines": {
+          "value": "true"
+        },
+        "TimeZone": {
+          "value": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
+        }
+      },
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c633f6a2-7f8b-4d9e-9456-02f0f04f5505",
+      "scope": "${current_scope_resource_id}",
+      "enforcementMode": null
+    },
+    "location": "${default_location}",
+    "identity": {
+      "type": "SystemAssigned"
+    }
+  }
