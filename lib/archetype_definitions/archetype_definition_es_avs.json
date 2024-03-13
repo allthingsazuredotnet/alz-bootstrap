@@ -1,6 +1,9 @@
 {
     "avs": {
-        "policy_assignments": ["Enable-AVS-Diagnostics"],
+        "policy_assignments": [
+            "Enable-AVS-Diagnostics",
+            "Audit-Linux-0644"
+        ],
         "policy_definitions": [],
         "policy_set_definitions": [],
         "role_definitions": [],
