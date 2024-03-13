@@ -3,7 +3,8 @@
         "policy_assignments": [
             "Enable-AVS-Diagnostics",
             "Audit-Linux-0644",
-            "Audit-LAW-Not-Connected"
+            "Audit-LAW-Not-Connected",
+            "Audit-Windows-Unique-Passwords"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
