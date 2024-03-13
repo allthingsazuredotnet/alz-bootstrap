@@ -7,7 +7,8 @@
             "Audit-Windows-Passwords",
             "Audit-Windows-Domain",
             "Audit-Time-Zone",
-            "Audit-Cert-Expiry"
+            "Audit-Cert-Expiry",
+            "Audit-Trusted-Root"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
