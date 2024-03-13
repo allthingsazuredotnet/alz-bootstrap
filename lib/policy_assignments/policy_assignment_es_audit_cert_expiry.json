@@ -26,7 +26,7 @@
           "value": "false"
         }
       },
-      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c633f6a2-7f8b-4d9e-9456-02f0f04f5505",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1417908b-4bff-46ee-a2a6-4acc899320ab",
       "scope": "${current_scope_resource_id}",
       "enforcementMode": null
     },
