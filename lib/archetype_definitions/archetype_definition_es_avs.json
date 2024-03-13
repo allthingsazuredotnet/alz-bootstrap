@@ -5,7 +5,8 @@
             "Audit-Linux-0644",
             "Audit-LAW-Not-Connected",
             "Audit-Windows-Passwords",
-            "Audit-Windows-Domain"
+            "Audit-Windows-Domain",
+            "Audit-Time-Zone"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
