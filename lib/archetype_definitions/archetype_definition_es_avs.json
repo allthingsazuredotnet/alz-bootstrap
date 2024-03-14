@@ -14,7 +14,8 @@
             "Audit-Pwd-Complexity",
             "Audit-PS-Execution",
             "Audit-Password-Length",
-            "Audit-Password-Store"
+            "Audit-Password-Store",
+            "Audit-Windows-Restart"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
