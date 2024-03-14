@@ -2,18 +2,18 @@
 locals {
   configure_connectivity_resources = {
     settings = {
-      hub_networks = [
-        {
-          enabled = false
-          config  = {}
-        }
-      ]
-      vwan_hub_networks = [
-        {
-          enabled = false
-          config  = {}
-        }
-      ]
+      # hub_networks = [
+      #   {
+      #     enabled = false
+      #     config  = {}
+      #   }
+      # ]
+      # vwan_hub_networks = [
+      #   {
+      #     enabled = false
+      #     config  = {}
+      #   }
+      # ]
       dns = {
         enabled = true
         config = {
