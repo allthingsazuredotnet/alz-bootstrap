@@ -1,0 +1,28 @@
+{
+    "name": "Audit-PS-Execution",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+      "description": "Requires that prerequisites are deployed to the policy assignment scope. Machines are non-compliant if  the Windows PowerShell command Get-ExecutionPolicy returns a value other than what was selected in the policy parameter.",
+      "displayName": "Audit Windows machines that do not have the specified Windows PowerShell execution policy.",
+      "notScopes": [],
+      "parameters": {
+        "IncludeArcMachines": {
+          "value": "true"
+        },
+        "ExecutionPolicy": {
+          "value": "RemoteSigned"
+        },
+        "effect": {
+          "value": "AuditIfNotExists"
+        }
+      },
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c648fbbb-591c-4acd-b465-ce9b176ca173",
+      "scope": "${current_scope_resource_id}",
+      "enforcementMode": null
+    },
+    "location": "${default_location}",
+    "identity": {
+      "type": "SystemAssigned"
+    }
+  }
