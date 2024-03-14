@@ -15,7 +15,8 @@
             "Audit-PS-Execution",
             "Audit-Password-Length",
             "Audit-Password-Store",
-            "Audit-Windows-Restart"
+            "Audit-Windows-Restart",
+            "Deny-Public-Endpoints"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
