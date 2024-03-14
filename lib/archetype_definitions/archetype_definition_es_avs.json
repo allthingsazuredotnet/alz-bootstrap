@@ -16,8 +16,7 @@
             "Audit-Password-Length",
             "Audit-Password-Store",
             "Audit-Windows-Restart",
-            "Deny-Public-Endpoints",
-            "Deploy-Private-DNS-Zones"
+            "Deny-Public-Endpoints"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
