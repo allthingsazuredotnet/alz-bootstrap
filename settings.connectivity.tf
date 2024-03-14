@@ -5,13 +5,13 @@ locals {
       hub_networks = [
         {
           enabled = false
-          config = {}
+          config  = {}
         }
       ]
       vwan_hub_networks = [
         {
           enabled = false
-          config = {}
+          config  = {}
         }
       ]
       dns = {
