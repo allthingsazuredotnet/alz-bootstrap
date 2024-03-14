@@ -1,0 +1,25 @@
+{
+    "name": "Audit-Windows-Restart",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+      "description": "Machines are non-compliant if the WMI property LastBootUpTime in class Win32_Operatingsystem is outside the range of days provided by the policy parameter.",
+      "displayName": "Audit Windows machines that have not restarted within the specified number of days",
+      "notScopes": [],
+      "parameters": {
+        "IncludeArcMachines": {
+          "value": "true"
+        },
+        "NumberOfDays": {
+          "value": "40"
+        }
+      },
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/beb6ccee-b6b8-4e91-9801-a5fa4260a104",
+      "scope": "${current_scope_resource_id}",
+      "enforcementMode": null
+    },
+    "location": "${default_location}",
+    "identity": {
+      "type": "SystemAssigned"
+    }
+  }
