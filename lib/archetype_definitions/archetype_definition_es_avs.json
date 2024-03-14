@@ -12,7 +12,8 @@
             "Audit-Max-Password-Age",
             "Audit-Min-Password-Age",
             "Audit-Pwd-Complexity",
-            "Audit-PS-Execution"
+            "Audit-PS-Execution",
+            "Audit-Password-Length"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
