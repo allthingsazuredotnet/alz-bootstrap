@@ -11,7 +11,7 @@
             "Audit-Trusted-Root",
             "Audit-Max-Password-Age",
             "Audit-Min-Password-Age",
-            "Audit-Password-Complexity"
+            "Audit-Pwd-Complexity"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
