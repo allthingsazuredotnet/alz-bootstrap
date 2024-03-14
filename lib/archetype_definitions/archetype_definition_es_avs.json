@@ -10,7 +10,8 @@
             "Audit-Cert-Expiry",
             "Audit-Trusted-Root",
             "Audit-Max-Password-Age",
-            "Audit-Min-Password-Age"
+            "Audit-Min-Password-Age",
+            "Audit-Password-Complexity"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
