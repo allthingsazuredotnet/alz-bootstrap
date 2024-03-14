@@ -9,7 +9,7 @@ locals {
       ]
       vwan_hub_networks = [
         {
-        enabled = false
+          enabled = false
         }
       ]
       dns = {
@@ -90,7 +90,7 @@ locals {
           enable_private_dns_zone_virtual_network_link_on_spokes = true
           virtual_network_resource_ids_to_link                   = []
         }
-}
+      }
     }
 
     location = var.management_resources_location
