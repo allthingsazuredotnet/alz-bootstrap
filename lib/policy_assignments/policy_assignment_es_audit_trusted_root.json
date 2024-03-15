@@ -16,7 +16,12 @@
       },
       "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/934345e1-4dfb-4c70-90d7-41990dc9608b",
       "scope": "${current_scope_resource_id}",
-      "enforcementMode": null
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+          "message": "Windows machines should contain the correct certificates in Trusted Root."
+        }
+      ]
     },
     "location": "${default_location}",
     "identity": {

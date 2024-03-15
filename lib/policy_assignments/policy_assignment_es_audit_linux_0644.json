@@ -16,7 +16,12 @@
       },
       "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e6955644-301c-44b5-a4c4-528577de6861",
       "scope": "${current_scope_resource_id}",
-      "enforcementMode": null
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+          "message": "Linux machines should have the passwd file permissions set to 0644."
+        }
+      ]
     },
     "location": "${default_location}",
     "identity": {

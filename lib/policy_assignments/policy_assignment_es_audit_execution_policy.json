@@ -19,7 +19,12 @@
       },
       "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c648fbbb-591c-4acd-b465-ce9b176ca173",
       "scope": "${current_scope_resource_id}",
-      "enforcementMode": null
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+          "message": "Windows machines should have the PowerShell execution policy set to RemoteSigned."
+        }
+      ]
     },
     "location": "${default_location}",
     "identity": {

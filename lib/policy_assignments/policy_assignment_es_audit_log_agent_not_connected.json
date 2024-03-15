@@ -16,7 +16,12 @@
       },
       "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6265018c-d7e2-432f-a75d-094d5f6f4465",
       "scope": "${current_scope_resource_id}",
-      "enforcementMode": null
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+          "message": "Windows machines should be connected to the log-mgmt-prod-uksouth-01 Log Analytics Workspace."
+        }
+      ]
     },
     "location": "${default_location}",
     "identity": {
