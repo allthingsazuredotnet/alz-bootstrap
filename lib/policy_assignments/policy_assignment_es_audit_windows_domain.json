@@ -16,7 +16,12 @@
       },
       "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/84662df4-0e37-44a6-9ce1-c9d2150db18c",
       "scope": "${current_scope_resource_id}",
-      "enforcementMode": null
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+          "message": "All Windows machines should be connected to the phe.gov.uk domain."
+        }
+      ]
     },
     "location": "${default_location}",
     "identity": {

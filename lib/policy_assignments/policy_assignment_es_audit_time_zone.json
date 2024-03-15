@@ -16,7 +16,12 @@
       },
       "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c633f6a2-7f8b-4d9e-9456-02f0f04f5505",
       "scope": "${current_scope_resource_id}",
-      "enforcementMode": null
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+          "message": "Windows machines should be set to (UTC+00:00) Dublin, Edinburgh, Lisbon, London."
+        }
+      ]
     },
     "location": "${default_location}",
     "identity": {

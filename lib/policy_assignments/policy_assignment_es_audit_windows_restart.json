@@ -16,7 +16,12 @@
       },
       "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/beb6ccee-b6b8-4e91-9801-a5fa4260a104",
       "scope": "${current_scope_resource_id}",
-      "enforcementMode": null
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+          "message": "Windows machines should be restarted within 40 days."
+        }
+      ]
     },
     "location": "${default_location}",
     "identity": {
