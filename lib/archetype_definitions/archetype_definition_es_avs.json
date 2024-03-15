@@ -18,7 +18,8 @@
             "Audit-Windows-Restart",
             "Deny-Public-Endpoints",
             "Deploy-Private-DNS-Zones",
-            "Audit-PeDnsZones"
+            "Audit-PeDnsZones",
+            "Deny-Public-IP-On-NIC-Ne"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],
