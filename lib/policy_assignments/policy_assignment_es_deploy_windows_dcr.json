@@ -13,7 +13,7 @@
         "dcrResourceId": {
           "value": "/subscriptions/ed471401-73c9-4910-aebb-ff80c112e496/resourcegroups/rg-dcr-testing/providers/microsoft.insights/datacollectionrules/MSVMI-dcr-windows-azure-arc"
         },
-        "resouceType": {
+        "resourceType": {
           "value": "Microsoft.Insights/dataCollectionRules"
         }
       },
