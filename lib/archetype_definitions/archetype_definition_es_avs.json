@@ -19,7 +19,8 @@
             "Deny-Public-Endpoints",
             "Deploy-Private-DNS-Zones",
             "Audit-PeDnsZones",
-            "Deny-Public-IP-On-NIC-Ne"
+            "Deny-Public-IP-On-NIC-Ne",
+            "Deploy-Windows-DCR"
         ],
         "policy_definitions": [],
         "policy_set_definitions": [],

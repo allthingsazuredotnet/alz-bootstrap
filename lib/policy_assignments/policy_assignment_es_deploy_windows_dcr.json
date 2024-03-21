@@ -1,0 +1,33 @@
+{
+    "name": "Deploy-Windows-DCR",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "apiVersion": "2019-09-01",
+    "properties": {
+      "description": "Deploy Association to link Windows Arc machines to the specified Data Collection Rule or the specified Data Collection Endpoint.",
+      "displayName": "Configure Windows Arc Machines to be associated with a Data Collection Rule or a Data Collection Endpoint",
+      "notScopes": [],
+      "parameters": {
+        "effect": {
+          "value": "DeployIfNotExists"
+        },
+        "dcrResourceId": {
+          "value": "/subscriptions/ed471401-73c9-4910-aebb-ff80c112e496/resourcegroups/rg-dcr-testing/providers/microsoft.insights/datacollectionrules/MSVMI-dcr-windows-azure-arc"
+        },
+        "resouceType": {
+          "value": "Microsoft.Insights/dataCollectionRules"
+        }
+      },
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/c24c537f-2516-4c2f-aac5-2cd26baa3d26",
+      "scope": "${current_scope_resource_id}",
+      "enforcementMode": null,
+      "nonComplianceMessages": [
+        {
+          "message": "Windows Arc Machines should be associated with a Data Collection Rule"
+        }
+      ]
+    },
+    "location": "${default_location}",
+    "identity": {
+      "type": "SystemAssigned"
+    }
+  }
