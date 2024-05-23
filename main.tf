@@ -24,7 +24,7 @@ module "enterprise-scale" {
     root = {
       archetype_id = "es_root"
       parameters = {
-        Deploy-Diagnostics-LogAnalytics = {
+        Deploy-Resource-Diag = {
           SQLDBsLogAnalyticsEffect = {
             effect = "Disabled"
           }
