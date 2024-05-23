@@ -20,6 +20,18 @@ module "enterprise-scale" {
   library_path                     = "${path.root}/lib"
   custom_landing_zones             = local.custom_landing_zones
 
+  archetype_config_overrides = {
+    root = {
+      archetype_id = "es_root"
+      parameters = {
+        SQLDBsLogAnalyticsEffect = {
+          effect = "Disabled"
+        }
+      }
+      access_control = {}
+    }
+  }
+
   providers = {
     azurerm              = azurerm
     azurerm.connectivity = azurerm
