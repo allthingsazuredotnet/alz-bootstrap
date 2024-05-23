@@ -24,11 +24,13 @@ module "enterprise-scale" {
     root = {
       archetype_id = "es_root"
       parameters = {
-        SQLDBsLogAnalyticsEffect = {
-          effect = "Disabled"
+        Deploy-Diagnostics-LogAnalytics = {
+          SQLDBsLogAnalyticsEffect = {
+            effect = "Disabled"
+          }
         }
+        access_control = {}
       }
-      access_control = {}
     }
   }
 
